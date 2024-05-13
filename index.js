@@ -38,8 +38,9 @@
 
 
 //make an array
-// let arr = [1,2,3,4,5,6,7,8,9,10];
+let arr = [1,2,3,4,5,6,7,8,9,10, 29];
 
-// for(let i of arr){
-//     console.log(i);
-// }
+for(let i of arr){
+    console.log(i);
+}
+console.log("size of array: " + arr.length);
