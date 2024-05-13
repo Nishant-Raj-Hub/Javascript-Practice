@@ -29,9 +29,17 @@
 
 
 // get user to input a number using prompt. check if number is multiple of 5 or not
-let number = prompt("Enter a number:");
-if(number % 2 == 0){
-    console.log("even")
-}else if(number % 2 !== 0){
-    console.log("odd");
-}   
+// let number = prompt("Enter a number:");
+// if(number % 2 == 0){
+//     console.log("even")
+// }else if(number % 2 !== 0){
+//     console.log("odd");
+// }   
+
+
+//make an array
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+
+// for(let i of arr){
+//     console.log(i);
+// }
