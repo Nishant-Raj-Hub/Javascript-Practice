@@ -72,4 +72,22 @@
 
 
 //ESCAPE CHARACTERS LIKE (\n, \t)
-console.log("Tony\nStark");
+// console.log("Tony\nStark");
+
+
+//STRING METHODS
+// let str = "Helloldsknfsdoi";
+// console.log(str.slice(0, str.length));
+
+// let str1 = "Hello";
+// let str2 = "World";
+// let str3 = str1.concat(" " +    str2);
+// console.log(str1.concat(" " + str2));
+
+let str = "Noddy";
+console.log(str.replace("N", "L"));
+
+
+
+
+
