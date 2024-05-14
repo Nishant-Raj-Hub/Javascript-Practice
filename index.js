@@ -43,12 +43,19 @@
 
 
 // FOR IN loop
-let student = {
-  name: "Noddy",
-  age: 23,
-  location: "jaipur",
-};
+// let student = {
+//   name: "Noddy",
+//   age: 23,
+//   location: "jaipur",
+// };
 
-for(let key in student) {
-  console.log(key + " " + student[key]);
+// for(let key in student) {
+//   console.log(key + " " + student[key]);
+// }
+
+//print even number from 0 to 100
+for( let i=0; i<=100; i++){
+    if(i % 2 == 0){
+        console.log(i);
+    }
 }
