@@ -62,10 +62,14 @@
 
 
 //TEMPLATE LITERALS & STRING INTERPOLATION
-const obj = {
-    name: "Noddy",
-    age: 23,
-    location: "jaipur",
-};
+// const obj = {
+//     name: "Noddy",
+//     age: 23,
+//     location: "jaipur",
+// };
 
-console.log(`The items of object are ${obj.age} ${obj.name}`);
+// console.log(`The items of object are ${obj.age} ${obj.name}`);
+
+
+//ESCAPE CHARACTERS LIKE (\n, \t)
+console.log("Tony\nStark");
