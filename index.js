@@ -84,8 +84,13 @@
 // let str3 = str1.concat(" " +    str2);
 // console.log(str1.concat(" " + str2));
 
-let str = "Noddy";
-console.log(str.replace("N", "L"));
+// let str = "Noddy";
+// console.log(str.replace("N", "L"));
+
+//Practice question
+const userFullName = prompt("Enter your full name");
+const userName = (userFullName.toLowerCase()) + userFullName.length;
+console.log(userName);
 
 
 
