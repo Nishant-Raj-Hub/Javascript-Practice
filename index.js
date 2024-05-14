@@ -41,7 +41,6 @@
 // }
 // console.log("size of array: " + arr.length);
 
-
 // FOR IN loop
 // let student = {
 //   name: "Noddy",
@@ -60,7 +59,6 @@
 //     }
 // }
 
-
 //TEMPLATE LITERALS & STRING INTERPOLATION
 // const obj = {
 //     name: "Noddy",
@@ -70,10 +68,8 @@
 
 // console.log(`The items of object are ${obj.age} ${obj.name}`);
 
-
 //ESCAPE CHARACTERS LIKE (\n, \t)
 // console.log("Tony\nStark");
-
 
 //STRING METHODS
 // let str = "Helloldsknfsdoi";
@@ -88,11 +84,19 @@
 // console.log(str.replace("N", "L"));
 
 //Practice question
-const userFullName = prompt("Enter your full name");
-const userName = (userFullName.toLowerCase()) + userFullName.length;
-console.log(userName);
+// const userFullName = prompt("Enter your full name");
+// const userName = (userFullName.toLowerCase()) + userFullName.length;
+// console.log(userName);
 
+//PRACTICR QUESTION
+let price = [250, 645, 300, 900, 50];
 
+let idx=0;
+for (let val of price) {
+  price[idx] = val - (val/10);
+  idx++;
+}
 
-
-
+for (let val of price) {
+  console.log(val);
+}
