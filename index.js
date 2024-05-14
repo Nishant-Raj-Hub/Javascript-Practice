@@ -103,7 +103,15 @@
 // }
 
 
-let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
-companies.splice(companies.length , 0, "Amazon");
-console.log(companies);
+// let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+// companies.splice(companies.length , 0, "Amazon");
+// console.log(companies);
 
+
+let str = "hello world";
+let str1 = str.split(" ");
+
+let hello = str1[0];
+let world = str1[1];
+
+console.log(hello.split("").reverse().join("")+ " " + world.split("").reverse().join(""));
