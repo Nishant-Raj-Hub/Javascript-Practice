@@ -88,15 +88,22 @@
 // const userName = (userFullName.toLowerCase()) + userFullName.length;
 // console.log(userName);
 
-//PRACTICR QUESTION
-let price = [250, 645, 300, 900, 50];
+//PRACTICE QUESTION
+// let price = [250, 645, 300, 900, 50];
 
-let idx=0;
-for (let val of price) {
-  price[idx] = val - (val/10);
-  idx++;
-}
+// let idx=0;
+// for (let val of price) {
+//     let offer = val - (val/10);
+//     price[idx] = offer;
+//     idx++;
+// }
 
-for (let val of price) {
-  console.log(val);
-}
+// for (let val of price) {
+//   console.log(val);
+// }
+
+
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+companies.splice(companies.length , 0, "Amazon");
+console.log(companies);
+
