@@ -115,15 +115,23 @@
 
 // console.log(hello.split("").reverse().join("")+ " " + world.split("").reverse().join(""));
 
-const vowels = (str) => {
-  let count = 0;
+// const vowels = (str) => {
+//   let count = 0;
 
-  for (let i of str) {
-    if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
-      count++;
-    }
-  }
-  console.log(count);
-}
+//   for (let i of str) {
+//     if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// }
 
-vowels("noddyaeiu");
+// vowels("noddyaeiu");
+
+
+//FOR EACH LOOP
+let arr = [1,2,3,4,5,6];
+
+arr.forEach((val)=>{
+    console.log(val*val);
+})
