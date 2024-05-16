@@ -211,18 +211,43 @@
 
 
 //PROMISE
-const getPromise = () => {
+// const getPromise = () => {
+//     return new Promise((resolve, reject)=>{
+//         console.log("I am promise");
+//         reject("failedddd");
+//     })
+// }
+
+
+// let promise = getPromise();
+// promise.then((res)=>{
+//     console.log(".then method running", res)
+// })
+// promise.catch((err)=>{
+//     console.log(".catch method running", err)
+// })
+
+
+
+
+// ASYNC AWAIT 
+
+function getData(dataId){
     return new Promise((resolve, reject)=>{
-        console.log("I am promise");
-        reject("failedddd");
-    })
+        setTimeout(()=>{
+            console.log("Data", dataId);
+            resolve(200);
+        }, 2000);
+    });
 }
 
-
-let promise = getPromise();
-promise.then((res)=>{
-    console.log(".then method running", res)
-})
-promise.catch((err)=>{
-    console.log(".catch method running", err)
-})
+async function getApiData(){
+    console.log("Fetching data 1")
+    await getData(1);
+    console.log("Fetching data 2")
+    await getData(2);
+    console.log("Fetching data 3")
+    await getData(3);
+    console.log("Fetching data 4")
+    await getData(4);
+}
