@@ -232,22 +232,37 @@
 
 // ASYNC AWAIT 
 
-function getData(dataId){
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
-            console.log("Data", dataId);
-            resolve(200);
-        }, 2000);
-    });
-}
+// function getData(dataId){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             console.log("Data", dataId);
+//             resolve(200);
+//         }, 2000);
+//     });
+// }
 
-async function getApiData(){
-    console.log("Fetching data 1")
-    await getData(1);
-    console.log("Fetching data 2")
-    await getData(2);
-    console.log("Fetching data 3")
-    await getData(3);
-    console.log("Fetching data 4")
-    await getData(4);
-}
+// async function getApiData(){
+//     console.log("Fetching data 1")
+//     await getData(1);
+//     console.log("Fetching data 2")
+//     await getData(2);
+//     console.log("Fetching data 3")
+//     await getData(3);
+//     console.log("Fetching data 4")
+//     await getData(4);
+// }
+
+
+
+
+//API DATA FETCHING
+const URL = "https://official-joke-api.appspot.com/random_joke";
+
+let joke = document.querySelector("#joke");
+
+(async () => {
+    let response = await fetch(URL);
+    let data = await response.json();
+    joke.innerText = data.setup + data.punchline;
+    console.log(data);
+})();
