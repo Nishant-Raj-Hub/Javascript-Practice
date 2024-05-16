@@ -176,11 +176,26 @@
 
 
 //SORT FUNCTION
-let arr = [1,12,34,5,6,7,67];
+// let arr = [1,12,34,5,6,7,67];
 
-const sortingxx = (a, b) => {
-    return a-b
-}
-let newArr = arr.sort(sortingxx);
-console.log(newArr);
-console.log(arr);
+// const sortingxx = (a, b) => {
+//     return a-b
+// }
+// let newArr = arr.sort(sortingxx);
+// console.log(newArr);
+// console.log(arr);
+
+
+
+let btn = document.querySelector("#btn");
+let currMode = "light";
+btn.addEventListener("click", ()=>{
+    let body = document.querySelector("body");
+    if(currMode === "light"){
+        body.style.backgroundColor = "black";
+        currMode = "dark";
+    }else{
+        body.style.backgroundColor = "blueviolet";
+        currMode = "light";
+    }
+})
