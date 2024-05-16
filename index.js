@@ -160,16 +160,27 @@
 
 
 //UNION OF TWO ARRAY
-let arr1 = [1,2,3,5,3,6,1];
-let arr2 = [8,6,9,0,1];
+// let arr1 = [1,2,3,5,3,6,1];
+// let arr2 = [8,6,9,0,1];
 
-function removeDuplicates(arr1, arr2){
-    let newArr = arr1.concat(arr2).sort();
+// function removeDuplicates(arr1, arr2){
+//     let newArr = arr1.concat(arr2).sort();
     
-    return newArr.filter((val, idx)=>
-        newArr.indexOf(val) == idx
-    )
+//     return newArr.filter((val, idx)=>
+//         newArr.indexOf(val) == idx
+//     )
     
+// }
+
+// console.log(removeDuplicates(arr1, arr2));
+
+
+//SORT FUNCTION
+let arr = [1,12,34,5,6,7,67];
+
+const sortingxx = (a, b) => {
+    return a-b
 }
-
-console.log(removeDuplicates(arr1, arr2));
+let newArr = arr.sort(sortingxx);
+console.log(newArr);
+console.log(arr);
