@@ -145,14 +145,31 @@
 // console.log(newArr);
 
 //PRACTICE QUESTIONS
-let n = prompt("Enter size of an array:");
-let arr = new Array(n);
+// let n = prompt("Enter size of an array:");
+// let arr = new Array(n);
 
-for(let i=0; i<n; i++){
-    arr[i] = i+1;
+// for(let i=0; i<n; i++){
+//     arr[i] = i+1;
+// }
+
+// let newArr = arr.reduce((prev, curr)=>{
+//     return prev + curr;
+// })
+// console.log(newArr);
+
+
+
+//UNION OF TWO ARRAY
+let arr1 = [1,2,3,5,3,6,1];
+let arr2 = [8,6,9,0,1];
+
+function removeDuplicates(arr1, arr2){
+    let newArr = arr1.concat(arr2).sort();
+    
+    return newArr.filter((val, idx)=>
+        newArr.indexOf(val) == idx
+    )
+    
 }
 
-let newArr = arr.reduce((prev, curr)=>{
-    return prev + curr;
-})
-console.log(newArr);
+console.log(removeDuplicates(arr1, arr2));
