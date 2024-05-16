@@ -128,7 +128,6 @@
 
 // vowels("noddyaeiu");
 
-
 //FOR EACH LOOP
 // let arr = [1,2,3,4,5,6];
 
@@ -157,23 +156,20 @@
 // })
 // console.log(newArr);
 
-
-
 //UNION OF TWO ARRAY
 // let arr1 = [1,2,3,5,3,6,1];
 // let arr2 = [8,6,9,0,1];
 
-// function removeDuplicates(arr1, arr2){
+// function union(arr1, arr2){
 //     let newArr = arr1.concat(arr2).sort();
     
 //     return newArr.filter((val, idx)=>
 //         newArr.indexOf(val) == idx
 //     )
-    
+
 // }
 
-// console.log(removeDuplicates(arr1, arr2));
-
+// console.log(union(arr1, arr2));
 
 //SORT FUNCTION
 // let arr = [1,12,34,5,6,7,67];
@@ -185,17 +181,48 @@
 // console.log(newArr);
 // console.log(arr);
 
+// let btn = document.querySelector("#btn");
+// let currMode = "light";
+// btn.addEventListener("click", ()=>{
+//     let body = document.querySelector("body");
+//     if(currMode === "light"){
+//         body.style.backgroundColor = "black";
+//         currMode = "dark";
+//     }else{
+//         body.style.backgroundColor = "blueviolet";
+//         currMode = "light";
+//     }
+// })
+
+//CALLBACK, PROMISES, AND ASYNC AWAIT
+// let promise = new Promise((resolve, reject) => {
+//   console.log("I am promise");
+//   let a = 9;
+//   if(a==5){
+//     resolve("I am resolved noddy");
+//   }
+  
+//   else{
+//     reject("I am rejected noddy");
+//   }
+// });
 
 
-let btn = document.querySelector("#btn");
-let currMode = "light";
-btn.addEventListener("click", ()=>{
-    let body = document.querySelector("body");
-    if(currMode === "light"){
-        body.style.backgroundColor = "black";
-        currMode = "dark";
-    }else{
-        body.style.backgroundColor = "blueviolet";
-        currMode = "light";
-    }
+
+
+//PROMISE
+const getPromise = () => {
+    return new Promise((resolve, reject)=>{
+        console.log("I am promise");
+        reject("failedddd");
+    })
+}
+
+
+let promise = getPromise();
+promise.then((res)=>{
+    console.log(".then method running", res)
+})
+promise.catch((err)=>{
+    console.log(".catch method running", err)
 })
