@@ -137,9 +137,22 @@
 // })
 
 //PRACTICE QUESTIONS
-let arr = [67, 89, 90, 96, 93, 78, 66];
+// let arr = [67, 89, 90, 96, 93, 78, 66];
 
-let newArr = arr.filter((res)=>{
-    return res>90;
+// let newArr = arr.filter((res)=>{
+//     return res>90;
+// })
+// console.log(newArr);
+
+//PRACTICE QUESTIONS
+let n = prompt("Enter size of an array:");
+let arr = new Array(n);
+
+for(let i=0; i<n; i++){
+    arr[i] = i+1;
+}
+
+let newArr = arr.reduce((prev, curr)=>{
+    return prev + curr;
 })
 console.log(newArr);
