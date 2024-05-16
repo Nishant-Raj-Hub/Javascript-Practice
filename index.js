@@ -102,16 +102,28 @@
 //   console.log(val);
 // }
 
-
 // let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 // companies.splice(companies.length , 0, "Amazon");
 // console.log(companies);
 
+//REVERSE STRING
+// let str = "hello world";
+// let str1 = str.split(" ");
 
-let str = "hello world";
-let str1 = str.split(" ");
+// let hello = str1[0];
+// let world = str1[1];
 
-let hello = str1[0];
-let world = str1[1];
+// console.log(hello.split("").reverse().join("")+ " " + world.split("").reverse().join(""));
 
-console.log(hello.split("").reverse().join("")+ " " + world.split("").reverse().join(""));
+const vowels = (str) => {
+  let count = 0;
+
+  for (let i of str) {
+    if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
+      count++;
+    }
+  }
+  console.log(count);
+}
+
+vowels("noddyaeiu");
