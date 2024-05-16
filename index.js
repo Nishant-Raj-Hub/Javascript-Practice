@@ -130,8 +130,16 @@
 
 
 //FOR EACH LOOP
-let arr = [1,2,3,4,5,6];
+// let arr = [1,2,3,4,5,6];
 
-arr.forEach((val)=>{
-    console.log(val*val);
+// arr.forEach((val)=>{
+//     console.log(val*val);
+// })
+
+//PRACTICE QUESTIONS
+let arr = [67, 89, 90, 96, 93, 78, 66];
+
+let newArr = arr.filter((res)=>{
+    return res>90;
 })
+console.log(newArr);
