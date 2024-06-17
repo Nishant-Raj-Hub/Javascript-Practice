@@ -41,12 +41,20 @@
 // }
 // console.log("size of array: " + arr.length);
 
+//STRING
+// let string = "Noddy";
+
+// console.log(string.toLowerCase())
+
 // FOR IN loop
 // let student = {
 //   name: "Noddy",
 //   age: 23,
 //   location: "jaipur",
 // };
+// for(let index in student){
+//     console.log(student[index])
+// }
 
 // for(let key in student) {
 //   console.log(key + " " + student[key]);
@@ -73,12 +81,21 @@
 
 //STRING METHODS
 // let str = "Helloldsknfsdoi";
-// console.log(str.slice(0, str.length));
+// console.log(str.slice(str.indexOf('e'), str.length));
 
 // let str1 = "Hello";
 // let str2 = "World";
 // let str3 = str1.concat(" " +    str2);
 // console.log(str1.concat(" " + str2));
+
+//SLICE
+// let str = "hello this is noddy"
+// console.log(str.substring(0, 3)) //hello
+
+//  PADSTART & PADEND
+
+// let string = 'Noddy';
+// console.log(string.padStart(8, 'X'));
 
 // let str = "Noddy";
 // console.log(str.replace("N", "L"));
@@ -98,6 +115,10 @@
 //     idx++;
 // }
 
+// let fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// console.log( fruits.toSpliced(1, 0, "Noddy"));
+
 // for (let val of price) {
 //   console.log(val);
 // }
@@ -114,6 +135,83 @@
 // let world = str1[1];
 
 // console.log(hello.split("").reverse().join("")+ " " + world.split("").reverse().join(""));
+
+const numbers = [5, 10, 15, 20, 25, 30];
+// const num2 = numbers.filter((value, index, array) => {
+//     return value > 18;
+// })
+// console.log(num2); // Output: [20, 25, 30]
+// console.log(numbers);
+
+//MAP
+// const number2 = numbers.map((value, index, array) => {
+//     if(value>20){
+//         return value;
+//     }
+
+// })
+// console.log(number2);
+
+//KEYS
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const keys = fruits.keys();
+// console.log(keys)
+
+// FOREACH
+// numbers.forEach((value, index, array) => {
+//     console.log(`value: ${value}, index: ${index}, array: ${array}`);
+// })
+
+//QUESTION
+//In the given array, print the value with its repetetion in the array (value with its count)
+// let arr = [2, 4, 6, 2, 7, 3, 4, 9, 8, 8, 1, 0, 1];
+// let count = {};
+// arr.forEach((value) => {
+//   if (count[value]) {
+//     count[value]++;
+//   } else {
+//     count[value] = 1;
+//   }
+// });
+// console.log(count); // Output: {2: 2, 4: 2,
+// 6: 1, 7: 1, 3: 1,
+// 9: 1, 8: 2, 1: 2,
+// 0: 1}
+
+
+
+//QUESTION
+//GET UNION OF TWO ARRAY
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [4, 5, 6, 7, 8];
+
+// let union = new Set([...arr1, ...arr2]);
+// console.log(union);
+
+
+//INTERSECTION OF TWO ARRAY
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [4, 5, 6, 7, 8];
+// let intersection = arr1.filter((value) => arr2.includes(value));
+// console.log(intersection); // Output: [4, 5]
+
+
+
+
+//PROMISE   
+let myPromise = new Promise((resolve, reject) => {
+  resolve("Resolve promise");
+  reject("Reject promise");
+});
+
+myPromise.then(
+  (value) => {
+    console.log(value);
+  },
+  (erroorr) => {
+    console.log(erroorr);
+  }
+);
 
 // const vowels = (str) => {
 //   let count = 0;
@@ -162,7 +260,7 @@
 
 // function union(arr1, arr2){
 //     let newArr = arr1.concat(arr2).sort();
-    
+
 //     return newArr.filter((val, idx)=>
 //         newArr.indexOf(val) == idx
 //     )
@@ -201,14 +299,11 @@
 //   if(a==5){
 //     resolve("I am resolved noddy");
 //   }
-  
+
 //   else{
 //     reject("I am rejected noddy");
 //   }
 // });
-
-
-
 
 //PROMISE
 // const getPromise = () => {
@@ -218,7 +313,6 @@
 //     })
 // }
 
-
 // let promise = getPromise();
 // promise.then((res)=>{
 //     console.log(".then method running", res)
@@ -227,10 +321,7 @@
 //     console.log(".catch method running", err)
 // })
 
-
-
-
-// ASYNC AWAIT 
+// ASYNC AWAIT
 
 // function getData(dataId){
 //     return new Promise((resolve, reject)=>{
@@ -252,17 +343,14 @@
 //     await getData(4);
 // }
 
-
-
-
 //API DATA FETCHING
-const URL = "https://official-joke-api.appspot.com/random_joke";
+// const URL = "https://official-joke-api.appspot.com/random_joke";
 
-let joke = document.querySelector("#joke");
+// let joke = document.querySelector("#joke");
 
-(async () => {
-    let response = await fetch(URL);
-    let data = await response.json();
-    joke.innerText = data.setup + data.punchline;
-    console.log(data);
-})();
+// (async () => {
+//     let response = await fetch(URL);
+//     let data = await response.json();
+//     joke.innerText = data.setup + data.punchline;
+//     console.log(data);
+// })();
