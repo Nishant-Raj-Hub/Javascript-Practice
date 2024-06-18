@@ -199,19 +199,19 @@ const numbers = [5, 10, 15, 20, 25, 30];
 
 
 //PROMISE   
-let myPromise = new Promise((resolve, reject) => {
-  resolve("Resolve promise");
-  reject("Reject promise");
-});
+// let myPromise = new Promise((resolve, reject) => {
+//   resolve("Resolve promise");
+//   reject("Reject promise");
+// });
 
-myPromise.then(
-  (value) => {
-    console.log(value);
-  },
-  (erroorr) => {
-    console.log(erroorr);
-  }
-);
+// myPromise.then(
+//   (value) => {
+//     console.log(value);
+//   },
+//   (erroorr) => {
+//     console.log(erroorr);
+//   }
+// );
 
 // const vowels = (str) => {
 //   let count = 0;
@@ -224,7 +224,10 @@ myPromise.then(
 //   console.log(count);
 // }
 
-// vowels("noddyaeiu");
+// vowels("aeiouu");
+
+
+
 
 //FOR EACH LOOP
 // let arr = [1,2,3,4,5,6];
